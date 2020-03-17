@@ -7,6 +7,11 @@ body {
   background-color: #512da8;
 }
 
+.navbar-lg {
+  background-color: #2874a6;
+  color: floralwhite;
+  overflow: hidden;
+}
 .carousel {
   background: #512da8;
   border-top: 10px;
@@ -59,4 +64,16 @@ address {
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
+}
+
+
+@media(min-width:1320px){
+  .navbar-lg {
+    width: 90%;
+    margin-left: 70px;
+}
+
+.p-footer{
+  margin-top: 10px;
+  width: 85%;
 }
