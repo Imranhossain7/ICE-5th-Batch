@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 
 body {
-  padding: 50px 0px 0px 0px;
+  padding: 3.125rem 0rem 0rem 0rem;
   z-index: 0;
 }
 
@@ -16,57 +16,58 @@ body {
 }
 .carousel {
   background: #512da8;
-  border-top: 10px;
-  border-bottom: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-top: 0.625rem;
+  border-bottom: 0.3125rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 .carousel .carousel-item {
-  height: 500px;
+  height: 31.25rem;
 }
 .carousel .carousel-item img {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 500px;
+  min-height: 31.25rem;
+  width: 100%;
 }
 
 .footer {
   background-color: #abb2b9;
   margin: 0px auto;
-  padding: 10px 10px;
+  padding: 0.3125rem 0.3125rem;
 }
 
 .jumbotron {
   margin: 0px auto;
-  padding: 70px 30px;
+  padding: 4.375rem 1.875rem;
   background: #566573;
   color: floralwhite;
 }
 
 .tab-content {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 30px;
+  border-left: 0.0625rem solid #ddd;
+  border-right: 0.0625rem solid #ddd;
+  border-bottom: 0.0625rem solid #ddd;
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
 }
 
 .row-header {
-  margin: 0px auto;
-  padding: 0px 0px;
+  margin: 0rem auto;
+  padding: 0rem 0rem;
 }
 
 .row-content {
-  margin: 0px auto;
-  padding: 50px 0px;
-  border-bottom: 1px ridge;
-  min-height: 400px;
+  margin: 0rem auto;
+  padding: 3.125rem 0rem;
+  border-bottom: 0.0625rem ridge;
+  min-height: 25rem;
 }
 
 address {
   font-size: 80%;
-  margin: 0px;
+  margin: 0rem;
   color: #0f0f0f;
 }
 
@@ -79,16 +80,16 @@ h5 {
 }
 
 .img-thumbnail {
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 0.0625rem solid #777;
 }
 
 div.gallery img {
@@ -97,7 +98,7 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 0.9375rem;
   text-align: center;
 }
 
@@ -106,21 +107,39 @@ div.desc {
 }
 
 .responsive {
-  padding: 0 6px;
+  padding: 0 0.375rem;
   float: left;
   width: 24.99999%;
+  text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 980px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0.375rem 0;
+  }
+
+  .responsive h3 {
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 730px) {
+  .carousel .carousel-item {
+    height: 18.15rem;
+  }
+  .carousel .carousel-item img {
+    min-height: 18.755rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
   .responsive {
     width: 100%;
+  }
+
+  .responsive h3 {
+    font-size: 0.5rem;
   }
 }
 
@@ -151,4 +170,10 @@ div.desc {
   text-decoration: none;
   font-size: medium;
   color: #273746;
+}
+
+.responsive h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #566573;
 }
